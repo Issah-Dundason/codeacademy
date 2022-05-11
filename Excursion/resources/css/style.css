@@ -24,7 +24,7 @@ main h1 {
     font-weight: normal;
 }
 
-main p {
+main p, .copyright {
     font-size: 21px;
     color: gray;
 }
@@ -36,5 +36,4 @@ a {
 
 .copyright {
     text-align: right;
-    color: grey;
 }
