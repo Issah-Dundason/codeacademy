@@ -4,104 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colmar Academy</title>
-    <link href="./resources/css/style.css" rel="stylesheet"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="./resources/css/style.css"/>
 </head>
 <body>
-    <!-- header -->
-    <header id="header">
+    <header>
         <div class="logo">
-            <img src="./resources/images/ic-logo.svg"/>
-            <p class="logo_text hide_mobile show_desktop" >
-                <span>Colmar</span><span>Academy</span>
+            <img src="./resources/images/ic-logo.svg" alt="logo"/>
+            <p class="logo_text hide_mobile">
+                <span>COLMAR</span>
+                <span>ACADEMY</span>
             </p>
         </div>
-        <nav class="nav">
-            <ul class="show_desktop hide_mobile">
-                <li><span>On campus</span></li>
-                <li><span>Online</span></li>
-                <li><span>or companies</span></li>
-                <li><span>Sign in</span></li>
+        <nav>
+            <ul class="hide_mobile">
+                <li><a href="#">On campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">or companies</a></li>
+                <li><a href="#">Sign in</a></li>
             </ul>
-            <ul class="hide_desktop show_mobile">
+            <ul class="hide_desktop">
                 <li>
-                    <a>
-                        <img src="./resources/images/ic-on-campus.svg"/>
+                    <a href="#">
+                        <img src="./resources/images/ic-on-campus.svg" alt="campus icon">
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="./resources/images/ic-online.svg"/>
+                    <a href="#">
+                        <img src="./resources/images/ic-online.svg" alt="online icon">
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="./resources/images/ic-login.svg"/>
+                    <a href="#">
+                        <img src="./resources/images/ic-login.svg" alt="sign in icon">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- banner -->
-    <div class="section banner">
-        <div class="width_60">
-            <div class="img_container">
-                <img src="./resources/images/banner.jpg"/>
-            </div>
+    <!--Banner-->
+    <div class="container banner">
+        <div class="width_60 img_container" id="banner_img">
+            <img src="./resources/images/banner.jpg" alt="banner"/>
         </div>
-        <div class="width_40">
-            <h3>Learn Something new everyday</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div id="banner_info">
+            <h2>Learn something new everyday</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
             <button>Start here</button>
         </div>
     </div>
-    <!--Information section-->
-    <div class="section information">
-        <div class="width_60 hide_mobile show_desktop">
+    <!--Information-->
+    <div class="container" id="info">
+        <div class="width_60 hide_mobile main_info">
             <div class="img_container">
-                <img src="./resources/images/information-main.jpg"/>
+                <img src="./resources/images/information-main.jpg" alt="main information image"/>
             </div>
-            <h3>It doesn't hurt to keep practicing</h3>
+            <h2>It doesn't hurt to keep practicing</h2>
             <p>
-                "Consequuntur aspernatur omnis perspiciatis atque esse sequi nihil magnam illo voluptatem necessitatibus vel voluptas architecto dolor. A perspiciatis illo nobis."
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vel eius amet fuga, ea dicta error excepturi nihil officia perspiciatis omnis tempora fugiat a nesciunt, deserunt quis repellat architecto illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, odio! Dolorem beatae, autem velit voluptatibus repellat incidunt nihil, obcaecati iste tempore ducimus reiciendis aperiam? Tempora possimus atque excepturi magni distinctio."
             </p>
-            <p>Emanuel. Sr Strategist at Hiring.com</p>
+            <p>
+                Emanuel, Sr Strategist at Hiring.com
+            </p>
         </div>
         <div class="width_40">
-            <div class="card">
+            <div class="info_card">
                 <div class="width_35">
                     <div class="img_container">
-                        <img src="./resources/images/information-orientation-mobile.jpg" class="show_mobile hide_desktop"/>
-                        <img src="./resources/images/information-orientation.jpg" class="hide_mobile show_desktop"/>
+                        <img src="./resources/images/information-orientation.jpg" alt="orientation image" class="hide_mobile">
+                        <img src="./resources/images/information-campus-mobile.jpg" alt="orientation image" class="hide_desktop">
                     </div>
                 </div>
-                <div class="card_info width_65">
+                <div class="width_65">
                     <h4>Orientation date</h4>
-                    <p>Tue 10/11 & Wed 10/12:8am-3pm</p>
+                    <p>Tue 10/11 & Wed 10/12:8am-12am</p>
                     <p><a>Read more</a></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="info_card">
                 <div class="width_35">
                     <div class="img_container">
-                        <img src="./resources/images/information-campus-mobile.jpg" class="show_mobile hide_desktop"/>
-                        <img src="./resources/images/information-campus.jpg" class="hide_mobile show_desktop"/>
+                        <img src="./resources/images/information-campus.jpg" alt="campus" class="hide_mobile">
+                        <img src="./resources/images/information-campus-mobile.jpg" alt="campus" class="hide_desktop">
                     </div>
                 </div>
-                <div class="card_info width_65">
+                <div class="width_65">
                     <h4>Our campus</h4>
                     <p>Find which campus is close by you</p>
                     <p><a>Read more</a></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="info_card">
                 <div class="width_35">
                     <div class="img_container">
-                        <img src="./resources/images/information-guest-lecture-mobile.jpg" class="show_mobile hide_desktop"/>
-                        <img src="./resources/images/information-guest-lecture.jpg" class="hide_mobile show_desktop"/>
-                    </div>                    
+                        <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecturer" class="hide_mobile">
+                        <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecturer" class="hide_desktop">
+                    </div>
                 </div>
-                <div class="card_info width_65">
+                <div class="width_65">
                     <h4>Our guest lecture</h4>
                     <p>Join a keynote with Oliver Sack about music in medical treatment</p>
                     <p><a>Read more</a></p>
@@ -110,80 +110,80 @@
         </div>
     </div>
     <!--Courses-->
-    <div class="section learn">
-        <h3>Start learning</h3>
+    <div class="courses_container">
+        <h2>Start learning</h2>
         <div class="courses">
             <div class="row">
-                <div class="card course">
-                    <div class="img_container hide_mobile show_desktop">
-                        <img src="./resources/images/course-software.jpg"/>
+                <div class="course card">
+                    <div class="img_container hide_mobile">
+                        <img src="./resources/images/course-software.jpg" alt="softaware engineering"/>
                     </div>
-                    <div class="info">
+                    <div class="course_info">
                         <h4>Software engineering</h4>
-                        <p class="hide_mobile show_desktop">COURSES</p>
-                        <p class="hide_mobile show_desktop">
+                        <p class="hide_mobile">COURSES</p>
+                        <p class="hide_mobile sub_courses">
                             Web Development, Mobile Development, iOT, APIs
                         </p>
                     </div>
                 </div>
-                <div class="card course">
-                    <div class="img_container hide_mobile show_desktop">
-                        <img src="./resources/images/course-computer-art.jpg"/>
+                <div class="course card">
+                    <div class="img_container hide_mobile">
+                        <img src="./resources/images/course-software.jpg" alt="computer art"/>
                     </div>
-                    <div class="info">
+                    <div class="course_info">
                         <h4>Computer art</h4>
-                        <p class="hide_mobile show_desktop">COURSES</p>
-                        <p class="hide_mobile show_desktop">
-                            Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+                        <p class="hide_mobile">COURSES</p>
+                        <p class="hide_mobile sub_courses">
+                            Imaging & Design, Web Design, Motion Graphics and Visual Effects, Computer Animation
                         </p>
                     </div>
                 </div>
-                <div class="card course">
-                    <div class="img_container hide_mobile show_desktop">
-                        <img src="./resources/images/course-design.jpg"/>
+                <div class="course card">
+                    <div class="img_container hide_mobile">
+                        <img src="./resources/images/course-design.jpg" alt="Design"/>
                     </div>
-                    <div class="info">
+                    <div class="course_info">
                         <h4>Design</h4>
-                        <p class="hide_mobile show_desktop">COURSES</p>
-                        <p class="hide_mobile show_desktop">
+                        <p class="hide_mobile">COURSES</p>
+                        <p class="hide_mobile sub_courses">
                             User Experience Design, User Research, Visual Design
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="card course">
-                    <div class="img_container hide_mobile show_desktop">
-                        <img src="./resources/images/course-data.jpg"/>
+                <div class="course card">
+                    <div class="img_container hide_mobile">
+                        <img src="./resources/images/course-data.jpg" alt="Data"/>
                     </div>
-                    <div class="info">
+                    <div class="course_info">
                         <h4>Data</h4>
-                        <p class="hide_mobile show_desktop">COURSES</p>
-                        <p class="hide_mobile show_desktop">
+                        <p class="hide_mobile">COURSES</p>
+                        <p class="hide_mobile sub_courses">
                             Data Science, Big Data, SQL, Data Visualization
                         </p>
                     </div>
                 </div>
-                <div class="card course">
-                    <div class="img_container hide_mobile show_desktop">
-                        <img src="./resources/images/course-business.jpg"/>
+                <div class="course card">
+                    <div class="img_container hide_mobile">
+                        <img src="./resources/images/course-business.jpg" alt="Business"/>
                     </div>
-                    <div class="info">
+                    <div class="course_info">
                         <h4>Business</h4>
-                        <p class="hide_mobile show_desktop">COURSES</p>
-                        <p class="hide_mobile show_desktop">
+                        <p class="hide_mobile">COURSES</p>
+                        <p class="hide_mobile sub_courses">
                             Product Development, Business Development, Startup
                         </p>
                     </div>
                 </div>
-                <div class="card course">
-                    <div class="img_container hide_mobile show_desktop">
-                        <img src="./resources/images/course-marketing.jpg"/>
+                <div class="course card">
+                    <div class="img_container hide_mobile">
+                        <img src="./resources/images/course-marketing.jpg" alt="Marketing"/>
                     </div>
-                    <div class="info">
+                    <div class="course_info">
                         <h4>Marketing</h4>
-                        <p class="hide_mobile show_desktop">COURSES</p>
-                        <p class="hide_mobile show_desktop">
+                        <p class="hide_mobile">COURSES</p>
+                        <p class="hide_mobile sub_courses">
                             Analytics, Content Marketing, Mobile Marketing
                         </p>
                     </div>
@@ -191,33 +191,43 @@
             </div>
         </div>
     </div>
-    <!--Thesis-->
-    <div class="section thesis">
-        <h3>Thesis exhibit</h3>
-        <div class="width_60">
-            <video autoplay muted loop>
-                <source src="./resources/videos/thesis.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="width_40 show_desktop hide_mobile">
-            <div class="card">
-                <div class="width_35">
-                    <div class="img_container">
-                        <img src="./resources/images/thesis-fisma.jpg"/>
+    <!--Exhibition-->
+    <div class="container" id="exhibits">
+        <h2>Thesis exhibits</h2>
+        <div class="exhibit_content">
+            <div class="width_60">
+                <div class="img_container">
+                    <video autoplay muted loop>
+                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="hide_mobile">
+                    <h4>Reimagine urban</h4>
+                    <p>
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic doloribus nulla at iusto, quasi nihil atque quae at reiciendis."
+                    </p>
+                </div>
+            </div>
+            <div class="width_40 hide_mobile">
+                <div class="thesis_card">
+                    <div class="width_35">
+                        <div class="img_container">
+                            <img src="./resources/images/thesis-fisma.jpg" />
+                        </div>
                     </div>
-                    <div class="card_info">
-                        <h3>Fisma Design and Prototype</h3>
+                    <div class="width_65">
+                        <h4>Fisma: Design and Prototype</h4>
                         <p>Designer showcase of new prototype product</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="width_35">
-                    <div class="img_container">
-                        <img src="./resources/images/thesis-now-and-then.jpg"/>
+                <div class="thesis_card">
+                    <div class="width_35">
+                        <div class="img_container">
+                            <img src="./resources/images/thesis-now-and-then.jpg" alt="orientation image"/>
+                        </div>
                     </div>
-                    <div class="card_info">
+                    <div class="width_65">
                         <h4>Now and then</h4>
                         <p>Research study about New York</p>
                     </div>
@@ -225,10 +235,12 @@
             </div>
         </div>
     </div>
-    <!--footer-->
     <footer>
-        <p>&copy;2016Colmar Academy.All rights reserved</p>
-        <p class="hide_mobile show_desktop"><a>Terms</a><a>Privacy</a></p>
+        <p>&copy;2016 Colmar Academy. All rights reserved</p>
+        <div class="hide_mobile">
+            <a href="#" id="terms">Terms</a>
+            <a href="#" id="privacy">Privacy</a>
+        </div>
     </footer>
 </body>
 </html>
