@@ -1,20 +1,39 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Tahoma;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: black;
-    cursor: pointer;
 }
+
 
 .img_container img, .img_container video {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.hide_mobile, .img_container .hide_mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: white;
+}
+
+nav {
+    width: 60%;
 }
 
 nav ul {
@@ -23,132 +42,82 @@ nav ul {
     justify-content: space-between;
 }
 
-.hide_mobile, .img_container .hide_mobile{
-    display: none;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 64px;
-}
-
-nav {
-    width: 60%;
-}
-/* Banner */
 .banner {
-    background: lightblue;
-    padding-bottom: 32px;
+    background-color: lightblue;
+}
+
+.banner, #info, .courses_container, #exhibits, footer {
+    position: relative;
+    top: 64px;
 }
 
 #banner_info {
-    margin: 32px 16px 0 16px;
+    padding: 32px 16px;
 }
 
 #banner_info h4 {
-    margin-top: 32px;
+    margin: 24px 0 32px 0;
 }
 
 #banner_info button {
-    margin-top: 24px;
-    padding: 8px 0;
+    background: grey;
     border: none;
     width: 100%;
-    background: grey;
+    padding: 8px 0;
     color: white;
 }
 
-/* info */
 #info {
     padding: 16px 16px 32px 16px;
 }
 
-#info .info_card:nth-child(even) {
-    margin: 64px 0;
+.info_card a {
+    color: blue;
+    font-weight: 600;
 }
 
-.info_card .width_65{
-    padding: 0 16px;
-}
-
-.info_card .width_65 h4 {
-    margin-top: 16px;
+.info_card .width_65 {
+    margin: 16px;
 }
 
 .info_card .width_65 p:nth-child(2) {
     margin: 8px 0;
 }
 
-.info_card .width_65 a {
-    color: blue;
-}
-
-/* courses */
 .courses_container {
     padding: 32px 16px;
 }
 
 .courses_container h2, #exhibits h2 {
     text-align: center;
-}
-
-.courses, .exhibit_content {
-    margin-top: 16px;
-}
-
-.course {
-    margin-bottom: 8px;
-}
-
-.courses .row:last-child .course:last-child {
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 .course_info h4 {
     padding: 16px 16px 24px 16px;
-    background: lightblue;
+    background-color: lightblue;
+    margin-bottom: 8px;
 }
 
-/* Thesis or exhibition */
+.course_info h4:last-child {
+    margin-bottom: 0;
+}
+
 #exhibits {
     padding: 32px 0 24px 0;
 }
 
 footer {
-    padding: 16px;
+    padding: 16px 16px;
 }
 
-@media only screen and (min-width: 620px) {
-    .hide_desktop, .img_container .hide_desktop{
+@media screen and (min-width:768px) {
+    .hide_desktop, .img_container .hide_desktop {
         display: none;
     }
 
-    .hide_mobile, .img_container .hide_mobile{
+    .hide_mobile, .img_container .hide_mobile {
         display: block;
-    }
-
-    .container {
-        padding: 32px 24px;
-        display: flex;
-    }
-
-    .width_40 {
-        margin-left: 24px;
-        width: 40%;
-    }
-
-    .width_60 {
-        width: 60%;
-    }
-
-    .width_35 {
-        width: 35%;
-    }
-
-    .width_65 {
-        width: 65%;
     }
 
     header {
@@ -156,142 +125,201 @@ footer {
         padding: 0 24px;
     }
 
+    nav {
+        width: auto;
+    }
+
     .logo {
         display: flex;
         align-items: center;
-        height: 32px;
     }
 
-    .logo_text span:first-child {
+    .logo p span:first-child{
         font-weight: bold;
     }
 
-    .logo_text span:last-child {
+    .logo p span:last-child{
         color: blue;
     }
 
-    nav .hide_mobile {
+    nav .hide_mobile, .info_card {
         display: flex;
-    }
-
-    nav, nav ul {
-        width: auto;
-        height: 100%;
     }
 
     nav li {
-        border-right: 16px solid lightblue;
-        height: 100%;
-        display: flex;
-        align-items: center;
+        margin-right: 16px;
     }
 
     nav li:last-child {
-        border: none;
+        margin-right: 0;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .width_65 {
+        width: 65%;
+    }
+
+    .width_60 {
+        width: 60%;
+        margin-right: 24px;
+    }
+
+    .width_40 {
+        width: 40%;
+    }
+
+    .width_35 {
+        width: 35%;
+    }
+
+    .container, #info {
+        padding: 32px 24px;
     }
 
     #banner_info {
+        padding: 0;
         display: flex;
         flex-direction: column;
-        margin: 0 24px;
         justify-content: center;
     }
 
-    #info .main_info h2 {
-        margin-top: 32px;
-        margin-bottom: 24px;
+    #banner_info h4 {
+        margin: 8px 0 8px 0;
     }
 
-    .main_info p:last-child {
-        margin-top: 24px;
+    .main_info h2 {
+        margin: 32px 0 24px 0;
     }
 
     .info_card {
-        display: flex;
-    }
-
-    #info .info_card:nth-child(even) {
         margin: 0;
+        font-size: .9em;
+        padding: 16px;
     }
 
-    .info_card .width_65 h4 {
-        margin-top: 0;
+    .info_card:last-child {
+        background-color: lightblue;
+    }
+
+    .info_card .width_65 {
+        margin: 0 0 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #info .width_40 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 64px;
+        padding-bottom: 32px;
     }
 
-    .info_card .width_65 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .main_info p:nth-child(3) {
+        font-size: .9em;
+    }
+
+    .main_info p:nth-child(4) {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: .8em;
     }
 
     .courses_container {
-        padding: 32px 72px;
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .row {
         display: flex;
-        margin-bottom: 32px;
+    }
+
+    .row .course:nth-child(even) {
+        margin: 0 16px;
     }
 
     .row:last-child {
-        margin-bottom: 0;
-    }
-
-    .course {
-        padding-bottom: 24px;
-        margin-left: 32px;
-    }
-
-    .course_info {
-        padding: 0 16px;
+        margin-top: 32px;
     }
 
     .course_info h4 {
-        margin: 16px 0 8px 0;
         padding: 0;
         background: transparent;
     }
 
-    .course_info p:last-child {
-        margin-top: 8px;
-        font-size: .8rem;
+    .course_info {
+        max-width: 80%;
+        font-size: .8em;
+        margin: 16px auto 0;
     }
 
     #exhibits {
         flex-direction: column;
-        margin: 0 24px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .exhibit_content {
         display: flex;
     }
 
+    .exhibit_content .width_60 h4 {
+        margin: 24px 0 8px 0;
+    }
+
+    .exhibit_content .width_60 p {
+        font-size: .9em;
+    }
+
     .thesis_card {
         display: flex;
-        margin-bottom: 24px;
+        font-size: .9em;
+        padding: 16px;
+    }
+
+    .thesis_card:first-child {
+        margin-bottom: 16px;
+        background: lightblue;
     }
 
     .thesis_card .width_65 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 16px;
-    }
-
-    .exhibit_content h4 {
-        margin: 16px 0 8px 0;
+        margin-left: 16px;
     }
 
     footer {
         display: flex;
+        font-size: .9em;
         justify-content: space-between;
+        align-items: center;
     }
 
+    
+}
+
+@media screen and (min-width: 1020px) {
+    h2 {
+        font-size: 1.9em;
+    }
+
+    .main_info p:nth-child(3) {
+        font-size: 1.1em;
+    }
+
+    #banner_info h4 {
+        margin: 45px 0 32px 0;
+    }
+
+    #banner_info button {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+    
 }
